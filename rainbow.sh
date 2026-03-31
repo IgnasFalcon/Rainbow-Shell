@@ -1,9 +1,7 @@
 #!/bin/bash
 
-chmod +x $0
 clear
-asciirainbowpath=$(whereis -b asciirainbow.txt | cut -d: -f2-)
-if ! cat $asciirainbowpath > /dev/null; then
+if ! cat asciirainbow.txt > /dev/null; then
 echo "Missing Text File."
 exit 1
 fi
