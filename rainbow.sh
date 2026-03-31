@@ -19,7 +19,7 @@ colors=(
 
 while true; do
   for c in "${colors[@]}"; do
-    echo -ne "${c}$(cat $asciirainbowpath)\e[0m\r"
+    echo -ne "${c}$asciirainbowpath\e[0m\r"
     sleep 1
     clear
   done
