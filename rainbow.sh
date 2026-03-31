@@ -3,7 +3,7 @@
 chmod +x $0
 clear
 asciirainbowpath=$(whereis -b asciirainbow.txt | cut -d: -f2-)
-if ! cat $rainbowpath > /dev/null; then
+if ! cat $asciirainbowpath > /dev/null; then
 echo "Missing Text File."
 exit 1
 fi
@@ -19,7 +19,7 @@ colors=(
 
 while true; do
   for c in "${colors[@]}"; do
-    echo -ne "${c}$asciirainbowpath\e[0m\r"
+    echo -ne "${c}$(asciirainbow.txt)\e[0m\r"
     sleep 1
     clear
   done
