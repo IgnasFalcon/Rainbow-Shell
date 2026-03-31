@@ -1,6 +1,6 @@
 #!/bin/bash
 
-chmod +x ./rainbow.sh
+chmod +x $0
 clear
 asciirainbowpath=$(whereis -b asciirainbow.txt | cut -d: -f2-)
 if ! cat $rainbowpath > /dev/null; then
