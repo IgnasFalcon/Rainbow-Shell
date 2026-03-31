@@ -1,9 +1,7 @@
 #!/bin/bash
 
-chmod +x $0
 clear
-asciirainbowpath=$(whereis -b asciirainbow.txt | cut -d: -f2-)
-if ! cat $asciirainbowpath > /dev/null; then
+if ! cat asciirainbow.txt > /dev/null; then
 echo "Missing Text File."
 exit 1
 fi
@@ -17,10 +15,23 @@ colors=(
   "\e[35m"  # Magenta
 )
 
-while true; do
-  for c in "${colors[@]}"; do
-    echo -ne "${c}$(cat asciirainbow.txt)\e[0m\r"
-    sleep 1
-    clear
+index=$(( $1 + 0 ))
+if [[ $(( $1 + 0 )) > 0 ]]; then
+  while [[ $index > 0 ]]; do
+    for c in "${colors[@]}"; do
+      echo -ne "${c}$(cat asciirainbow.txt)\e[0m\r"
+      sleep 1
+      clear
+    done
+  (( index-- ))
   done
-done
+else
+  while true; do
+     for c in "${colors[@]}"; do
+       echo -ne "${c}$(cat asciirainbow.txt)\e[0m\r"
+       sleep 1
+       clear
+      done
+  (( index-- ))
+  done
+fi
