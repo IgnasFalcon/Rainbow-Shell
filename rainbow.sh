@@ -1,5 +1,6 @@
 #!/bin/bash
 
+clear
 if ! cat asciirainbow.txt > /dev/null; then
 echo "Missing Text File."
 exit 1
