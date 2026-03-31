@@ -1,13 +1,22 @@
-# Rainbow-Shell![License](https://img.shields.io/badge/license-MIT-green)![Shell](https://img.shields.io/badge/language-bash-blue)
-A shell script to make a rainbow!
-## How to run
-### On Windows
-PowerShell / Terminal
+# Rainbow-Shell
+A script to make a rainbow!
+# 1. Clone repository
+## Windows & Linux
+### Terminal:
+<pre>git clone https://github.com/IgnasFalcon/Rainbow-Shell.git</pre>
+<pre>cd Rainbow-Shell</pre>
+# 2. Run the program
+## Windows
+### PowerShell / Terminal (Recommended)
 <pre>
 ./rainbow.bat
 </pre>
-### On Linux
-Bash / Terminal
+### File Explorer (Not recommended)
+Double-click the "rainbow" file while in the root directory
+## Linux
+### Bash / Terminal
 <pre>
 bash rainbow.sh
 </pre>
+#
+![License](https://img.shields.io/badge/License-MIT-green)![Shell](https://img.shields.io/badge/Language-Bash-blue)![Shell](https://img.shields.io/badge/Language-Batch-blue)
