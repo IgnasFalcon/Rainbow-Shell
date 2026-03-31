@@ -10,7 +10,7 @@ A script to make a rainbow!
 <pre>
 ./rainbow.bat
 </pre>
-### File Explorer
+### File Explorer (Not recommended)
 Double-click the "rainbow" file while in the root directory
 ## Linux
 ### Bash / Terminal
