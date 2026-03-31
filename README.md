@@ -4,6 +4,7 @@ A script to make a rainbow!
 ## Windows & Linux
 ### Terminal:
 <pre>git clone https://github.com/IgnasFalcon/Rainbow-Shell.git</pre>
+<pre>cd Rainbow-Shell</pre>
 # 2. Run the program
 ## Windows
 ### PowerShell / Terminal (Recommended)
