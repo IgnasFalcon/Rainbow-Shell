@@ -21,7 +21,7 @@ colors=(
 
 #Display rainbow
 index=$(( $1 + 0 ))
-if [[ $(( $1 + 0 )) > 0 ]]; then
+if [[ $1 > "" ]]; then
   while [[ $index > 0 ]]; do
     for c in "${colors[@]}"; do
       echo -ne "${c}$(cat asciirainbow.txt)\e[0m\r"
