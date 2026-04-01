@@ -19,5 +19,8 @@ Double-click the "rainbow" file while in the root directory
 <pre>
 bash rainbow.sh
 </pre>
+You can even set how many cycles of the rainbow it runs! (This feature only works for Linux for now)
+<pre>bash rainbow.sh 3</pre>
+This goes through all seven colors three times!
 #
 ![License](https://img.shields.io/badge/License-MIT-green)![Shell](https://img.shields.io/badge/Language-Bash-blue)![Shell](https://img.shields.io/badge/Language-Batch-blue)
