@@ -15,10 +15,23 @@ colors=(
   "\e[35m"  # Magenta
 )
 
-while true; do
-  for c in "${colors[@]}"; do
-    echo -ne "${c}$(cat asciirainbow.txt)\e[0m\r"
-    sleep 1
-    clear
+index=$(( $1 + 0 ))
+if [[ $(( $1 + 0 )) > 0 ]]; then
+  while [[ $index > 0 ]]; do
+    for c in "${colors[@]}"; do
+      echo -ne "${c}$(cat asciirainbow.txt)\e[0m\r"
+      sleep 1
+      clear
+    done
+  (( index-- ))
   done
-done
+else
+  while true; do
+     for c in "${colors[@]}"; do
+       echo -ne "${c}$(cat asciirainbow.txt)\e[0m\r"
+       sleep 1
+       clear
+      done
+  (( index-- ))
+  done
+fi
