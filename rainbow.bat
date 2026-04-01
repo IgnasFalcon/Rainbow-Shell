@@ -1,10 +1,10 @@
 @echo off
-CLS
+cls
 :loop
-FOR %%A IN (0 1 2 3 4 5 6 7 8 9 A B C D E F) DO (
-CLS
-COLOR %%A
+for %%A in (0 1 2 3 4 5 6 7 8 9 A B C D E F) do (
+cls
+color %%A
 type AsciiRainbow.txt
-TIMEOUT 1 | @echo off 
+timeout 1 | @echo off 
 )
 goto loop
