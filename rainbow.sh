@@ -7,13 +7,15 @@ exit 1
 fi
 
 colors=(
-  "\e[31m"  # Red
-  "\e[33m"  # Yellow
-  "\e[32m"  # Green
-  "\e[36m"  # Cyan
-  "\e[34m"  # Blue
-  "\e[35m"  # Magenta
+  "\e[31m"       # Red
+  "\e[38;5;208m" # Orange
+  "\e[33m"       # Yellow
+  "\e[32m"       # Green
+  "\e[36m"       # Cyan / Light Blue
+  "\e[34m"       # Blue
+  "\e[35m"       # Violet
 )
+
 
 index=$(( $1 + 0 ))
 if [[ $(( $1 + 0 )) > 0 ]]; then
