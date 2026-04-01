@@ -1,11 +1,14 @@
 #!/bin/bash
 
 clear
+
+#ERRORS
 if ! cat asciirainbow.txt > /dev/null; then
 echo "Missing Text File."
 exit 1
 fi
 
+#Define colors
 colors=(
   "\e[31m"       # Red
   "\e[38;5;208m" # Orange
@@ -16,9 +19,9 @@ colors=(
   "\e[35m"       # Violet
 )
 
-
+#Display rainbow
 index=$(( $1 + 0 ))
-if [[ $(( $1 + 0 )) > 0 ]]; then
+if [[ $1 > "" ]]; then
   while [[ $index > 0 ]]; do
     for c in "${colors[@]}"; do
       echo -ne "${c}$(cat asciirainbow.txt)\e[0m\r"
