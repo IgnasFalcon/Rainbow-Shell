@@ -7,10 +7,10 @@ if [[ $(echo $?) == 1 ]]; then
     exit 127
 fi
 #Installation
-mv rainbow.sh rainbow
+mv -f rainbow.sh rainbow
 chmod +x ./rainbow
-mv rainbow ~/.local/bin
-mv asciirainbow.txt ~/.local/bin
+mv -f rainbow ~/.local/bin
+mv -f asciirainbow.txt ~/.local/bin
 echo "Installation completed successfully."
 echo "Do you want to clean up the installation? (Recommended) (Y/n)"
 read clean
