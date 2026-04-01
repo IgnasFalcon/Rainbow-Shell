@@ -21,5 +21,5 @@ fi
 #Finished
 
 echo "Finished installing. If you want to execute the script run:"
-echo "rainbow [cycles]
+echo "rainbow [cycles]"
 exit 0
