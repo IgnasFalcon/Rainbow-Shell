@@ -3,8 +3,7 @@
 clear
 
 #ERRORS
-echo $PATH | grep /.local/bin > /dev/null
-if [[ $(echo $?) == 1 ]]; then
+if ! echo $PATH | grep /.local/bin > /dev/null; then
     echo "~/.local/bin is not in path. Add it to your path and try again."
     exit 127
 fi
