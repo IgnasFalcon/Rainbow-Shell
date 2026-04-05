@@ -12,7 +12,6 @@ fi
 mv -f rainbow.sh rainbow
 chmod +x ./rainbow
 mv -f rainbow ~/.local/bin
-mv -f asciirainbow.txt ~/.local/bin
 echo "Installing..."
 sleep 2
 echo "Installation completed successfully."
