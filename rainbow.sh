@@ -2,12 +2,6 @@
 
 clear
 
-#ERRORS
-if ! cat asciirainbow.txt > /dev/null; then
-echo "Missing Text File."
-exit 1
-fi
-
 #Define colors
 colors=(
   "\e[31m"       # Red
