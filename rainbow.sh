@@ -2,21 +2,36 @@
 
 clear
 
+#Define list option
+list_mode=false
+
+while getopts "l" opt; do
+    case "$opt" in
+        l) list_mode=true ;;
+        *) exit 1 ;;
+    esac
+done
+
+#This removes the -l
+shift $((OPTIND - 1))
+
 #Define colors
 colors=(
-  "\e[31m"       # Red
-  "\e[38;5;208m" # Orange
-  "\e[33m"       # Yellow
-  "\e[32m"       # Green
-  "\e[36m"       # Cyan / Light Blue
-  "\e[34m"       # Blue
-  "\e[35m"       # Violet
+  "\e[31m"
+  "\e[38;5;208m"
+  "\e[33m" # Replacement for yellow
+  "\e[32m"
+  "\e[36m"
+  "\e[34m" # Closest to indigo
+  "\e[35m"
 )
 
 #Rainbow function
 rainbow() {
     for c in "${colors[@]}"; do
-        clear
+        if ! $list_mode; then
+            clear
+        fi
         echo -e "${c}$(echo "
 ooooooooo.         .o.       ooooo ooooo      ooo oooooooooo.    .oooooo.   oooooo   oooooo     oooo 
 .888   .Y88.      .888.      .888. .888b.     .8. .888.   .Y8b  d8P.  .Y8b   .888.    .888.     .8.  
