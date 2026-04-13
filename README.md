@@ -32,6 +32,6 @@ Run this to install the package. **Make sure you are in the root directory! Run 
 <pre>bash install.sh</pre>
 ### If everything worked out, you can now run it with this syntax:
 <pre>rainbow [-l] [CYCLES]</pre>
-Cycles is the number of times the code will go through the full rainbow. To make it display in a list, use [-l]
+Cycles is the number of times the code will go through the full rainbow. To make it display in a list, use [-l].
 #
 ![License](https://img.shields.io/badge/License-MIT-green)![Shell](https://img.shields.io/badge/Language-Bash-blue)![Shell](https://img.shields.io/badge/Language-Batch-blue)
