@@ -32,8 +32,7 @@ rainbow() {
         if ! $list_mode; then
             clear
         fi
-        echo -e "${c}$(echo "
-ooooooooo.         .o.       ooooo ooooo      ooo oooooooooo.    .oooooo.   oooooo   oooooo     oooo 
+        echo -e "${c}$(echo "ooooooooo.         .o.       ooooo ooooo      ooo oooooooooo.    .oooooo.   oooooo   oooooo     oooo 
 .888   .Y88.      .888.      .888. .888b.     .8. .888.   .Y8b  d8P.  .Y8b   .888.    .888.     .8.  
  888   .d88.     .88888.      888   8 .88b.    8   888     888 888      888   .888.   .8888.   .8.   
  888ooo88P.     .8. .888.     888   8   .88b.  8   888oooo888. 888      888    .888  .8..888. .8.    
